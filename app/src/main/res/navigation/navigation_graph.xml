@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/secondScreenFragment">
+    <fragment
+        android:id="@+id/secondScreenFragment"
+        android:name="com.example.info360.SecondScreenFragment"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" />
+</navigation>

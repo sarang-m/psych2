@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Info360</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_heading_text">Find The Right Therapist For You !</string>
+    <string name="home_description_text">Answer a few sample questions (don’t worry, everything is confidential) so we can get to know you. Afterwards, we will recommend a therapist based on your specific needs.</string>
+    <string name="depression_button">Depression</string>
+    <string name="stress_button">Stress</string>
+    <string name="anxiety_button">Anxiety</string>
+    <string name="self_esteem_button">Self Esteem</string>
+    <string name="teenage_button">Teenage</string>
+    <string name="couple_button">Couple</string>
+    <string name="individual_button">Individual</string>
+    <string name="more_button">More</string>
+    <string name="sec_dep_cont_text">Chat with a matching therapist to identify your therapy needs.</string>
+    <string name="learn_more">Learn More</string>
+</resources>

@@ -5,13 +5,15 @@
     tools:context=".SecondScreenFragment">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="20dp"
+            android:scrollbars="none"
             android:layout_gravity="top">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -74,6 +76,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
             app:layout_anchorGravity="center"
+            android:scrollbars="none"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -81,61 +84,65 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/dep_cardview"
                     android:layout_width="300dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    app:shapeAppearance="@style/boxLook"
-                    android:background="@drawable/depression_box"
-                    android:layout_height="wrap_content"
                     android:minHeight="400dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_height="wrap_content">
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp">
 
 
                         <TextView
                             android:id="@+id/sec_dep_depression_text"
-                            android:layout_marginTop="25dp"
-                            android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:paddingTop="30dp"
+                            android:layout_marginTop="25dp"
                             android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
                             android:text="@string/depression_button"
                             android:textColor="@android:color/white"
+                            tools:textColor="@android:color/background_dark"
                             android:textSize="30sp" />
+
                         <TextView
                             android:id="@+id/sec__dep_assessment_text"
-                            android:layout_marginTop="20dp"
-                            android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/sec_dep_depression_text"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            tools:textColor="@android:color/background_dark"
                             android:text="Get an Assessment"
-                            android:textSize="20sp"
-                            android:textColor="@android:color/white" />
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/sec_dep_content_text"
-                            android:layout_marginTop="15dp"
-                            android:textSize="20sp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
                             android:layout_below="@+id/sec__dep_assessment_text"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            tools:textColor="@android:color/background_dark"
                             android:text="@string/sec_dep_cont_text"
-                            android:textColor="@android:color/white" />
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
 
                         <android.widget.Button
-                            android:layout_below="@+id/sec_dep_content_text"
                             android:layout_width="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center"
-                            android:background="@drawable/learn_more_button"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/sec_dep_content_text"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/learn_more_button"
+                            android:gravity="center"
                             android:text="@string/learn_more" />
 
                     </RelativeLayout>
@@ -143,7 +150,8 @@
                 </com.google.android.material.card.MaterialCardView>
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="300dp"
-                    android:background="@drawable/depression_box"
+                    android:id="@+id/stress_cardView"
+                    android:layout_marginEnd="50dp"
                     android:layout_height="wrap_content"
                     android:minHeight="400dp">
                     <RelativeLayout
@@ -157,12 +165,14 @@
                         <TextView
                             android:id="@+id/sec_str_stress_text"
                             android:layout_marginTop="25dp"
+                            android:paddingTop="30dp"
                             android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_bold"
-                            android:text="@string/depression_button"
+                            android:text="Stress"
                             android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"
                             android:textSize="30sp" />
                         <TextView
                             android:id="@+id/sec__str_assessment_text"
@@ -173,6 +183,7 @@
                             android:layout_below="@+id/sec_str_stress_text"
                             android:text="Get an Assessment"
                             android:textSize="20sp"
+                            tools:textColor="@android:color/black"
                             android:textColor="@android:color/white" />
 
                         <TextView
@@ -184,10 +195,206 @@
                             android:gravity="center"
                             android:layout_below="@+id/sec__str_assessment_text"
                             android:text="@string/sec_dep_cont_text"
-                            android:textColor="@android:color/white" />
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
 
-                        <Button
+                        <android.widget.Button
                             android:layout_below="@+id/sec_str_content_text"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/learn_more_button"
+                            android:layout_height="wrap_content"
+                            android:text="@string/learn_more" />
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:id="@+id/anxiety_cardView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:minHeight="400dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/sec_anx_anxiety_text"
+                            android:layout_marginTop="25dp"
+                            android:paddingTop="30dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Anxiety"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"
+                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/sec_anx_assessment_text"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sec_anx_anxiety_text"
+                            android:text="Get an Assessment"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/sec_anx_content_text"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@+id/sec_anx_assessment_text"
+                            android:text="@string/sec_dep_cont_text"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <android.widget.Button
+                            android:layout_below="@+id/sec_anx_content_text"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/learn_more_button"
+                            android:layout_height="wrap_content"
+                            android:text="@string/learn_more" />
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:id="@+id/selfEsteem_cardView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:minHeight="400dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/sec_self_selfEsteem_text"
+                            android:layout_marginTop="25dp"
+                            android:paddingTop="30dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Self Esteem"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"
+                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/sec_self_assessment_text"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sec_self_selfEsteem_text"
+                            android:text="Get an Assessment"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/sec_selfEsteem_content_text"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@+id/sec_self_assessment_text"
+                            android:text="@string/sec_dep_cont_text"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <android.widget.Button
+                            android:layout_below="@+id/sec_selfEsteem_content_text"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/learn_more_button"
+                            android:layout_height="wrap_content"
+                            android:text="@string/learn_more" />
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:id="@+id/more_cardView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:minHeight="400dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/sec_more_text"
+                            android:layout_marginTop="25dp"
+                            android:paddingTop="30dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="More"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"
+                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/sec_more_assessment_text"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sec_more_text"
+                            android:text="Get an Assessment"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/sec_more_content_text"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@+id/sec_more_assessment_text"
+                            android:text="@string/sec_dep_cont_text"
+                            android:textColor="@android:color/white"
+                            tools:textColor="@android:color/black"/>
+
+                        <android.widget.Button
+                            android:layout_below="@+id/sec_more_content_text"
                             android:layout_width="match_parent"
                             android:layout_marginTop="10dp"
                             android:gravity="center"

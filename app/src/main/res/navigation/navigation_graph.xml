@@ -16,6 +16,18 @@
     <fragment
         android:id="@+id/secondScreenFragment"
         android:name="com.example.info360.SecondScreenFragment"
-        android:label="fragment_second_screen"
-        tools:layout="@layout/fragment_second_screen" />
+        android:label="action_secondScreenFragment_to_patientTypeFragment"
+        tools:layout="@layout/fragment_second_screen">
+        <action
+            android:id="@+id/action_secondScreenFragment_to_patientTypeFragment"
+            app:destination="@id/patientTypeFragment" />
+        <action
+            android:id="@+id/action_secondScreenFragment2_to_patientTypeFragment"
+            app:destination="@id/patientTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientTypeFragment"
+        android:name="com.example.info360.PatientTypeFragment"
+        android:label="fragment_patient_type"
+        tools:layout="@layout/fragment_patient_type" />
 </navigation>

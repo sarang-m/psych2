@@ -137,6 +137,7 @@
                             android:textSize="20sp" />
 
                         <android.widget.Button
+                            android:id="@+id/dep_learnMore_button"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/sec_dep_content_text"
@@ -199,6 +200,7 @@
                             tools:textColor="@android:color/black"/>
 
                         <android.widget.Button
+                            android:id="@+id/stress_learnMore_button"
                             android:layout_below="@+id/sec_str_content_text"
                             android:layout_width="match_parent"
                             android:layout_marginTop="10dp"
@@ -264,6 +266,7 @@
                             tools:textColor="@android:color/black"/>
 
                         <android.widget.Button
+                            android:id="@+id/anxiety_learMore_button"
                             android:layout_below="@+id/sec_anx_content_text"
                             android:layout_width="match_parent"
                             android:layout_marginTop="10dp"
@@ -329,6 +332,7 @@
                             tools:textColor="@android:color/black"/>
 
                         <android.widget.Button
+                            android:id="@+id/selEsteem_learnMore_button"
                             android:layout_below="@+id/sec_selfEsteem_content_text"
                             android:layout_width="match_parent"
                             android:layout_marginTop="10dp"
@@ -394,6 +398,7 @@
                             tools:textColor="@android:color/black"/>
 
                         <android.widget.Button
+                            android:id="@+id/more_learnMore_button"
                             android:layout_below="@+id/sec_more_content_text"
                             android:layout_width="match_parent"
                             android:layout_marginTop="10dp"
@@ -414,9 +419,6 @@
 
 
         </HorizontalScrollView>
-
-
-
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

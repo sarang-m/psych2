@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.example.info360.databinding.FragmentSecondScreenBinding
 
 /**
@@ -29,6 +30,17 @@ class SecondScreenFragment : Fragment() {
         binding.anxietyCardView.setBackgroundResource(R.drawable.anxiety_box)
         binding.selfEsteemCardView.setBackgroundResource(R.drawable.self_esteem_box)
         binding.moreCardView.setBackgroundResource(R.drawable.more_box)
+
+        binding.depLearnMoreButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+            R.id.action_secondScreenFragment_to_patientTypeFragment))
+        binding.stressLearnMoreButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+            R.id.action_secondScreenFragment_to_patientTypeFragment))
+        binding.anxietyLearMoreButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+            R.id.action_secondScreenFragment_to_patientTypeFragment))
+        binding.selEsteemLearnMoreButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+            R.id.action_secondScreenFragment_to_patientTypeFragment))
+        binding.moreLearnMoreButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+            R.id.action_secondScreenFragment_to_patientTypeFragment))
 
 
 

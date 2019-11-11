@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PatientTypeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none"
+            android:layout_gravity="top">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <android.widget.Button
+                    android:id="@+id/depression_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/depression_button_icon"
+                    android:text="@string/depression_button" />
+
+                <android.widget.Button
+                    android:id="@+id/stress_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stress_button_icon"
+                    android:padding="10dp"
+                    android:text="@string/stress_button" />
+
+                <android.widget.Button
+                    android:id="@+id/anxiety_button1"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/anxiety_button_icon"
+                    android:text="@string/anxiety_button" />
+
+                <android.widget.Button
+                    android:id="@+id/self_esteem_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/self_esteem_button_icon"
+                    android:text="@string/self_esteem_button" />
+
+                <android.widget.Button
+                    android:id="@+id/more_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/more_button_icon"
+                    android:text="@string/more_button" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:id="@+id/teenage_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="20dp"
+                android:text="Teenage"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                tools:textColor="@android:color/black" />
+
+            <android.widget.Button
+                android:id="@+id/couple_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="20dp"
+                android:text="Couple"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                tools:textColor="@android:color/black" />
+
+            <android.widget.Button
+                android:id="@+id/individual_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="20dp"
+                android:text="Individual"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                tools:textColor="@android:color/black" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>
